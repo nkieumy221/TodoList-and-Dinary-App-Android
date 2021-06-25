@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/edtbg"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="7.5">
+
+                <TextView
+                    android:id="@+id/tieude"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/amita"
+                    android:textColor="#E9761E"
+                    android:textSize="17dp"/>
+
+                <TextView
+                    android:id="@+id/local"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:id="@+id/time_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/more"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/more"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/content_post"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:fontFamily="@font/anaheim"/>
+
+    <ImageView
+        android:id="@+id/imgPost"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+</LinearLayout>

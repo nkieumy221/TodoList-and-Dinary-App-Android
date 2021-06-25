@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#FFF7EA">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:src="@drawable/sieumong"
+                android:contentDescription="TODO" />
+
+            <com.applandeo.materialcalendarview.CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                app:headerColor="#FFB289"
+                />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:text="Công việc trong hôm nay của bạn"
+                style="@style/titlefont"
+                android:background="#FFB289"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        style="@style/fontDiem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mục tiêu"
+                        android:textColor="#FF4D4D"
+                        android:background="@drawable/cell_shape"/>
+
+                    <TextView
+                        style="@style/fontDiem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Đã hoàn thành"
+                        android:textColor="#20B8FF"
+                        android:background="@drawable/cell_shape"/>
+
+                    <TextView
+                        style="@style/fontDiem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Chưa hoàn thành"
+                        android:textColor="#A034FF"
+                        android:background="@drawable/cell_shape"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tong"
+                        style="@style/point"
+                        android:text="0"
+                        android:background="@drawable/cell_shape"/>
+
+                    <TextView
+                        android:id="@+id/done"
+                        style="@style/point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:background="@drawable/cell_shape"/>
+
+                    <TextView
+                        android:id="@+id/miss"
+                        style="@style/point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:background="@drawable/cell_shape"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFC3A2"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="5dp">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/amita"
+                    android:text="@string/contextTT"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/intTodo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/amita"
+                    android:text="Tạo công việc mới"
+                    android:textAlignment="center"
+                    android:textColor="#E9761E"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edtbg">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="150dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/catwriting" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/anonymous_pro_bold_italic"
+                        android:text="@string/writing"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/intDnr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/anonymous_pro_bold_italic"
+                        android:text="Viết nhật kí ngay"
+                        android:textColor="#FF7A14"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/calendar"
+            android:id="@+id/cldNV"
+            android:text="Home"
+            android:textAlignment="center"
+            android:drawableTint="#E9761E"
+            android:textColor="#E9761E">
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/list"
+            android:id="@+id/todoNV"
+            android:text="Todo List"
+            android:textAlignment="center"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/dinary"
+            android:id="@+id/dnrNV"
+            android:textAlignment="center"
+            android:text="Dinary"></TextView
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/person"
+            android:id="@+id/prNV"
+            android:textAlignment="center"
+            android:text="User"></TextView>
+    </LinearLayout>
+
+</LinearLayout>

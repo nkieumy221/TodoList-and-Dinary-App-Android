@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Calendar" android:icon="@drawable/calendar" android:id="@+id/cld"/>
+    <item android:title="Todo List" android:icon="@drawable/list" android:id="@+id/tdl"/>
+    <item android:title="Dinary" android:icon="@drawable/dinary" android:id="@+id/dnr"/>
+    <item android:title="User" android:icon="@drawable/person" android:id="@+id/us"/>
+</menu>

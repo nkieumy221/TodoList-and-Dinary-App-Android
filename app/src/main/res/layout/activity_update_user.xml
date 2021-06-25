@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateUser"
+    android:orientation="vertical"
+    android:background="@drawable/meodanh">
+    <ImageView
+        android:id="@+id/avtImg"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:src="@drawable/person"
+        />
+    <TextView
+        android:id="@+id/editAvt"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:hint="Thay đổi ảnh đại diện"
+        android:textAlignment="center"
+        />
+    <EditText
+        android:id="@+id/usnamTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên của bạn"
+        android:drawableLeft="@drawable/nameac"
+        android:drawablePadding="10dip"
+        android:layout_marginHorizontal="20dp"
+        />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sinh nhật"
+        android:drawableLeft="@drawable/birthday"
+        android:drawablePadding="10dip"
+        android:layout_marginHorizontal="20dp"/>
+
+    <EditText
+        android:id="@+id/tel"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số điện thoại"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="10dip"
+        android:layout_marginHorizontal="20dp"/>
+
+    <EditText
+        android:id="@+id/hobb"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:drawableStart="@drawable/hobby"
+        android:drawablePadding="10dip"
+        android:hint="Sở thích"
+        android:textAlignment="textStart"
+        android:layout_marginHorizontal="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnSave"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/save"
+            />
+
+        <ImageButton
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/cancel" />
+    </LinearLayout>
+</LinearLayout>

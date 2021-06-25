@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dinary_form"
+    android:background="#FFF7EA">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/sieumong" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/amita"
+        android:textColor="#E9761E"
+        android:textSize="17dp"
+        android:text="Hôm nay bạn đã làm những gì !? Ghi lại nhật kí hôm nay nhé?"/>
+
+    <EditText
+        android:id="@+id/addDinary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edtbg"
+        android:ems="10"
+        android:layout_margin="10dp"
+        android:hint="Bạn nghĩ gì?"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+
+    <ListView
+        android:id="@+id/listDinary"
+        android:layout_width="match_parent"
+        android:layout_height="500dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/calendar"
+            android:id="@+id/cldNV"
+            android:text="Home"
+            android:textAlignment="center"
+            >
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/list"
+            android:id="@+id/todoNV"
+            android:text="Todo List"
+            android:textAlignment="center"
+           ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/dinary"
+            android:id="@+id/dnrNV"
+            android:textAlignment="center"
+            android:text="Dinary"
+            android:drawableTint="#E9761E"
+            android:textColor="#E9761E"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/person"
+            android:id="@+id/prNV"
+            android:textAlignment="center"
+            android:text="User"></TextView>
+    </LinearLayout>
+
+
+
+</LinearLayout>
