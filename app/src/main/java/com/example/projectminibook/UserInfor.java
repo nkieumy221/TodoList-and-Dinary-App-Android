@@ -39,6 +39,7 @@ public class UserInfor extends AppCompatActivity {
     public void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_infor);
+        getSupportActionBar().hide();
         preferences = getSharedPreferences("userdetails", Context.MODE_PRIVATE);
         id = preferences.getString("ID","");
         navigation();

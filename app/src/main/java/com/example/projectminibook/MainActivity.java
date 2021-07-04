@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
     public void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
         preferences = getSharedPreferences("userdetails", Context.MODE_PRIVATE);
         idu = preferences.getString("ID","");
         addControls();

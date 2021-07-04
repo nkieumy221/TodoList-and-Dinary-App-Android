@@ -45,6 +45,7 @@ public class updateTodo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_todo);
+        getSupportActionBar().hide();
         addControls();
         initUI();
         addEvent();

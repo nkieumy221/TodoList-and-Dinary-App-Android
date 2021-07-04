@@ -44,6 +44,7 @@ public class updateUser extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_user);
+        getSupportActionBar().hide();
         preferences = getSharedPreferences("userdetails", Context.MODE_PRIVATE);
         id = preferences.getString("ID","");
         addControls();

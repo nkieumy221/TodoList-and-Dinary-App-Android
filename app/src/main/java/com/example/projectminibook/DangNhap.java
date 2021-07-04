@@ -25,6 +25,7 @@ public class DangNhap extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         preferences = getSharedPreferences("userdetails",  Context.MODE_PRIVATE);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_dang_nhap);
 
         addControls();

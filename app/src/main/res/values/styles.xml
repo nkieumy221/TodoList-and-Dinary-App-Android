@@ -18,9 +18,10 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:fontFamily">@font/amita</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textSize">18sp</item>
+        <item name="android:padding">5sp</item>
+        <item name="fontFamily">@font/anonymous_pro_bold_italic</item>
     </style>
 
     <style name="point">

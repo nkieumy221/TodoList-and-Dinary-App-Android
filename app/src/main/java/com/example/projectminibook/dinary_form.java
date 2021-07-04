@@ -41,6 +41,7 @@ public class dinary_form extends AppCompatActivity {
     public void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dinary_form);
+        getSupportActionBar().hide();
         preferences = getSharedPreferences("userdetails", Context.MODE_PRIVATE);
         idu = preferences.getString("ID","");
         addControls();

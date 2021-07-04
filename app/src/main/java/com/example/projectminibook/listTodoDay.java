@@ -47,6 +47,7 @@ public class listTodoDay extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_todo_day);
+        getSupportActionBar().hide();
         preferences = getSharedPreferences("userdetails", Context.MODE_PRIVATE);
         idu = preferences.getString("ID","");
         addControls();

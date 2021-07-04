@@ -30,6 +30,7 @@ public class Dangky extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dangky);
+        getSupportActionBar().hide();
         addControls();
         addEvents();
     }
