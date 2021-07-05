@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".UserInfor"
-    android:background="@drawable/meodanh">
+    android:background="#FFF7EA">
 
     <ImageView
         android:layout_width="match_parent"
@@ -36,69 +36,65 @@
         android:text="TextView"
         android:textAlignment="center"
         android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
         android:fontFamily="@font/anonymous_pro_bold_italic"
         />
 
-    <TextView
-        android:layout_marginTop="20dp"
-        android:id="@+id/birthday"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="birthday"
-        android:drawableLeft="@drawable/birthday"
-        android:drawablePadding="10dip"
-        android:layout_marginHorizontal="20dp"
-        android:textSize="16dp"/>
+        android:orientation="vertical"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="40dp">
 
-    <TextView
-        android:id="@+id/tel"
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="telephone"
-        android:drawableLeft="@drawable/phone"
-        android:drawablePadding="10dip"
-        android:layout_marginHorizontal="20dp"
-        android:textSize="16dp"/>
+        <TextView
+            android:id="@+id/birthday"
+            android:text="birthday"
+            android:drawableLeft="@drawable/birthday"
+            style="@style/user_item"
+            />
 
-    <TextView
-        android:id="@+id/hobb"
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="79dp"
-        android:drawableLeft="@drawable/hobby"
-        android:drawablePadding="10dip"
-        android:text="Hobby"
-        android:layout_marginHorizontal="20dp"
-        android:textSize="16dp"/>
+        <TextView
+            android:id="@+id/tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="telephone"
+            android:drawableLeft="@drawable/phone"
+            style="@style/user_item"/>
 
-    <TextView
-        android:id="@+id/EditInf"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Chỉnh sửa thông tin"
-        android:layout_marginTop="0dp"
-        android:drawablePadding="10dip"
-        android:layout_marginHorizontal="20dp"
-        android:textSize="16dp"
-        android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/hobb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/hobby"
+            android:text="Hobby"
+            style="@style/user_item"/>
 
-    <TextView
-        android:layout_marginTop="20dp"
-        android:id="@+id/dangxuat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Đăng xuất"
-        android:drawablePadding="10dip"
-        android:layout_marginHorizontal="20dp"
-        android:textSize="16dp"
-        android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/EditInf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chỉnh sửa thông tin"
+            style="@style/user_item"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/dangxuat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng xuất"
+            style="@style/user_item"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="horizontal"
-        android:layout_marginTop="150dp">
+        android:layout_marginTop="200dp">
 
         <TextView
             android:layout_width="wrap_content"
