@@ -31,7 +31,7 @@ public class dinary_form extends AppCompatActivity {
     SQLiteDatabase database;
     Cursor cursor;
 
-    EditText addDinary;
+    TextView addDinary;
     ListView listDnr;
     ArrayList<DinaryModel> list;
     AdapterDinary adapterDinary;

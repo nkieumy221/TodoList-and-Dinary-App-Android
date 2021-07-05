@@ -19,7 +19,7 @@
         android:text="Đăng nhập"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:textColor="#FF697B"/>
+        android:textColor="#FFA968"/>
 
     <EditText
         android:layout_marginTop="100dp"
@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Đăng nhập"
-        android:backgroundTint="#FF697B"
+        android:backgroundTint="#FFA968"
         android:paddingHorizontal="40dp"
         android:paddingVertical="10dp"
         android:layout_weight="1"
@@ -73,7 +73,7 @@
             android:layout_weight="1"
             android:text="Bạn chưa có tài khoản? "
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:textSize="18sp"
            />
 
         <Button
@@ -82,7 +82,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Đăng kí"
-            android:backgroundTint="#FF697B"/>
+            android:backgroundTint="#FFA968"/>
     </LinearLayout>
 
 </LinearLayout>

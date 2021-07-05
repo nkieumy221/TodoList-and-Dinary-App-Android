@@ -4,79 +4,82 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:background="@drawable/edtbg"
-    android:layout_marginTop="10dp">
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
+        android:orientation="vertical"
+        android:background="@drawable/edtbg"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal"
-            >
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="7.5">
-
-                <TextView
-                    android:id="@+id/tieude"
-                    android:layout_weight="1"
-                    android:text="TextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAlignment="center"
-                    android:fontFamily="@font/amita"
-                    android:textColor="#E9761E"
-                    android:textSize="17dp"/>
-
-                <TextView
-                    android:id="@+id/local"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView"
-                    android:layout_marginLeft="20dp"/>
-
+            android:layout_marginTop="10dp">
                 <TextView
                     android:id="@+id/time_post"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="TextView"
-                    android:layout_marginLeft="20dp"/>
+                    android:text="22/04/2021"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/amita"/>
 
-            </LinearLayout>
+                <ImageButton
+                    android:id="@+id/more"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/more"
+                    android:background="#00FFFFFF"
+                    />
 
-            <ImageButton
-                android:id="@+id/more"
-                android:layout_width="50dp"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                android:src="@drawable/more"
-                />
         </LinearLayout>
+        <TextView
+            android:id="@+id/local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:src="@drawable/dotted"
+            android:layerType="software"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tieude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/amita"
+            android:text="TextView"
+
+            android:textColor="#E9761E"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/content_post"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:id="@+id/imgPost"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/content_post"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:fontFamily="@font/anaheim"/>
-
-    <ImageView
-        android:id="@+id/imgPost"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 </LinearLayout>

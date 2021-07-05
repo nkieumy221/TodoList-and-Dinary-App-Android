@@ -32,7 +32,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class updateTodo extends AppCompatActivity {
-    ImageButton btnSave, btnCancel;
+    Button btnSave, btnCancel;
     EditText edtTen, edtNd ;
     TimePicker timePicker;
     private int notificationId = 1;

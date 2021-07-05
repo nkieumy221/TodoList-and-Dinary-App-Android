@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TimePicker;
@@ -18,7 +19,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class AddTodo extends AppCompatActivity {
-    ImageButton btnSave, btnCancel;
+    Button btnSave, btnCancel;
     EditText edtTen, edtNd;
     TimePicker timePicker;
 

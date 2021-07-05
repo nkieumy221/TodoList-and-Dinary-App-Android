@@ -51,12 +51,12 @@ public class updateDinary extends AppCompatActivity {
     }
 
     private void addControls() {
-        title = findViewById(R.id.title);
+        title = findViewById(R.id.tieude);
         postUp = findViewById(R.id.post);
         contentPost = findViewById(R.id.contentUd);
         chosephoto = findViewById(R.id.photo);
         feeling = findViewById(R.id.feel);
-        imgV = (ImageView) findViewById(R.id.img_post);
+        imgV = findViewById(R.id.img_post);
     }
 
     private void unitUI() {
@@ -75,6 +75,7 @@ public class updateDinary extends AppCompatActivity {
 
         title.setText(tt);
         imgV.setImageBitmap(bitmap);
+        imgV.setVisibility(View.VISIBLE);
         contentPost.setText(ct);
         feeling.setText(cx);
 

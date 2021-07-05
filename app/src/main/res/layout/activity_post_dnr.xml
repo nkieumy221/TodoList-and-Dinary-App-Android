@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PostDnr"
-    android:background="@drawable/chanmeo">
+    android:background="#FFF7EA"
+    >
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,66 +17,86 @@
             android:layout_width="match_parent"
             android:layout_height="72dp"
             android:src="@drawable/sieumong" />
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:orientation="horizontal">
+            android:layout_height="523dp"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/tieude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/amita"
+                    android:hint="Tiêu đề bài viết"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:background="#fff"/>
+
+                <Button
+                    android:id="@+id/dang"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Đăng"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
 
             <EditText
-                android:id="@+id/tieude"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:hint="Tiêu đề bài viết"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:fontFamily="@font/amita"/>
+                android:id="@+id/content_post"
+                android:layout_width="match_parent"
+                android:layout_height="193dp"
+                android:background="#fff"
+                android:ems="10"
+                android:hint="Bạn đang nghĩ gì?"
+                android:layout_marginTop="8dp"
+                android:inputType="textPersonName" />
 
-            <Button
-                android:id="@+id/dang"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Đăng" />
+            <ImageView
+                android:id="@+id/imagePost"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                tools:srcCompat="@tools:sample/backgrounds/scenic"
+                />
 
+            <EditText
+                android:id="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/photo_camera"
+                android:drawablePadding="10dip"
+                android:ems="10"
+                android:hint="Photo/Video"
+                android:inputType="textPersonName"
+                android:background="#fff"
+                android:paddingVertical="5dp"
+                android:paddingLeft="5dp"/>
+
+            <EditText
+                android:id="@+id/feel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/emoticon"
+                android:drawablePadding="10dip"
+                android:ems="10"
+                android:hint="Feeling/Activity"
+                android:inputType="textPersonName"
+                android:background="#fff"
+                android:paddingVertical="5dp"
+                android:paddingLeft="5dp"/>
         </LinearLayout>
 
-        <EditText
-            android:id="@+id/content_post"
-            android:layout_width="match_parent"
-            android:layout_height="193dp"
-            android:ems="10"
-            android:hint="Bạn đang nghĩ gì?"
-            android:inputType="textPersonName" />
-
-        <ImageView
-            android:layout_marginTop="5dp"
-            android:id="@+id/imagePost"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:visibility="gone"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
-
-        <EditText
-            android:id="@+id/photo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Photo/Video"
-            android:drawableLeft="@drawable/photo_camera"
-            android:drawablePadding="10dip"
-            android:layout_marginTop="10dp"/>
-
-        <EditText
-            android:id="@+id/feel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Feeling/Activity"
-            android:drawableLeft="@drawable/emoticon"
-            android:drawablePadding="10dip"
-            android:layout_marginTop="10dp"/>
     </LinearLayout>
 </ScrollView>
