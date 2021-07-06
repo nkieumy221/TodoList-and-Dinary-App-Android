@@ -64,11 +64,11 @@
                 android:id="@+id/img_post"
                 android:layout_width="match_parent"
                 android:layout_marginTop="5dp"
-                android:layout_height="100dp"
+                android:layout_height="150dp"
                 tools:srcCompat="@tools:sample/backgrounds/scenic"
                 android:visibility="gone"/>
 
-            <EditText
+            <TextView
                 android:id="@+id/photo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -80,7 +80,8 @@
                 android:inputType="textPersonName"
                 android:background="#fff"
                 android:paddingVertical="5dp"
-                android:paddingLeft="5dp"/>
+                android:paddingLeft="5dp"
+                android:textSize="18sp"/>
 
             <EditText
                 android:id="@+id/feel"
@@ -94,7 +95,8 @@
                 android:inputType="textPersonName"
                 android:background="#fff"
                 android:paddingVertical="5dp"
-                android:paddingLeft="5dp"/>
+                android:paddingLeft="5dp"
+                android:textSize="18sp"/>
         </LinearLayout>
 
     </LinearLayout>

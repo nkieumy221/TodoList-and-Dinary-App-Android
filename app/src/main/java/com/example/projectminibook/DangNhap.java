@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class DangNhap extends AppCompatActivity {
     EditText edtUs, edtPass;
@@ -62,6 +63,7 @@ public class DangNhap extends AppCompatActivity {
                         editor.putString("ID", id+"");
                         editor.putString("username", tenTk);
                         editor.apply();
+                        Toast.makeText(DangNhap.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
                         Intent i = new Intent(DangNhap.this, MainActivity.class);
                         startActivity(i);
                     }

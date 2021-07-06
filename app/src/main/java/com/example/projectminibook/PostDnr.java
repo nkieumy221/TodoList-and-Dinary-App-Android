@@ -32,7 +32,8 @@ import java.io.InputStream;
 import java.text.SimpleDateFormat;
 
 public class PostDnr extends AppCompatActivity {
-    EditText noidung, photos, feel, title;
+    EditText noidung,  title;
+    TextView photos, feel;
     Button post;
     final int RESQUEST_TAKE_PHOTO = 123;
     final int REQUEST_CHOOSE_PHOTO = 321;

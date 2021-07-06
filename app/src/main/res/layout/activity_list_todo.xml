@@ -4,21 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/listTodo1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="#FFF7EA"
     tools:context=".ListTodo">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
             android:orientation="vertical"
-            android:weightSum="4"
-            >
+            android:weightSum="4">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -31,8 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Nhiệm vụ ngày hôm nay?"
-                android:textColor="@color/black"
-                />
+                android:textColor="@color/black" />
 
             <TableLayout
                 android:layout_width="match_parent"
@@ -55,10 +55,9 @@
                         android:layout_weight="1"
                         android:background="@drawable/cell_shape"
                         android:text="Mục tiêu"
-                        android:textColor="#FF4D4D"
                         android:textAlignment="center"
-                        android:textSize="18sp"
-                        />
+                        android:textColor="#FF4D4D"
+                        android:textSize="18sp" />
 
                     <TextView
                         style="@style/fontDiem"
@@ -67,8 +66,8 @@
                         android:layout_weight="1"
                         android:background="@drawable/cell_shape"
                         android:text="Đã hoàn thành"
-                        android:textColor="#20B8FF"
                         android:textAlignment="center"
+                        android:textColor="#20B8FF"
                         android:textSize="18sp" />
 
                     <TextView
@@ -125,42 +124,43 @@
                 android:id="@+id/time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:text="Danh sách công việc cần làm"
                 android:textAlignment="center"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <ListView
                 android:id="@+id/Todolayout"
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="500dp"
                 android:layout_margin="10dp"
-                tools:layout_editor_absoluteX="1dp"
-                tools:layout_editor_absoluteY="1dp"
                 android:divider="#00FFFFFF"
                 android:dividerHeight="0.0px"
-               ></ListView>
-        </LinearLayout
-            >
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp"
+                android:layout_weight="4"
+                ></ListView>
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="bottom|right|end"
-            android:src="@drawable/add"
-            app:backgroundTint="#fff"
-            app:fabSize="mini"
-            app:maxImageSize="40dp" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|end"
+                android:src="@drawable/add"
+                app:backgroundTint="#fff"
+                app:fabSize="mini"
+                app:maxImageSize="40dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="4"
-            android:layout_marginBottom="0dp">
+            >
 
             <TextView
                 android:id="@+id/cldNV"

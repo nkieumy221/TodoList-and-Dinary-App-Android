@@ -90,6 +90,15 @@ public class AdapterTodoList extends BaseAdapter {
             }
         });
 
+        title.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, todo_detail.class);
+                intent.putExtra("ID",id);
+                context.startActivity(intent);
+            }
+        });
+
         suaCv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

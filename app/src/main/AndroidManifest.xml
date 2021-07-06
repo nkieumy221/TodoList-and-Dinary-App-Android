@@ -10,9 +10,9 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ProjectMiniBook"
-        >
-        <activity android:name=".listTodoDay"></activity>
+        android:theme="@style/Theme.ProjectMiniBook">
+        <activity android:name=".todo_detail"></activity>
+        <activity android:name=".listTodoDay" />
         <activity android:name=".updateUser" />
         <activity android:name=".Dangky" />
         <activity android:name=".DangNhap">
@@ -42,7 +42,8 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-        <receiver android:name=".AlarmReceiver"></receiver>
+
+        <receiver android:name=".AlarmReceiver" />
     </application>
 
 </manifest>

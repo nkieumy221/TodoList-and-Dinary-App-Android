@@ -31,7 +31,8 @@ import java.util.Calendar;
 
 public class updateDinary extends AppCompatActivity {
     Button postUp;
-    EditText contentPost, chosephoto, feeling, title;
+    EditText contentPost,  title;
+    TextView chosephoto, feeling;
     ImageView imgV;
     int id =-1;
     final int RESQUEST_TAKE_PHOTO = 123;
